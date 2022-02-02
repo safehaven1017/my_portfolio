@@ -42,4 +42,7 @@ document.querySelector('.skills-button').addEventListener('click', () => {
 document.querySelector('.portfolio-button').addEventListener('click', () => {
     document.querySelector('#portfolio-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
+document.querySelector('.contact-button').addEventListener('click', () => {
+    document.querySelector('#contact-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+})
 
