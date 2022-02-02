@@ -33,4 +33,7 @@ homeButton.addEventListener('mouseenter', (e) => {
 homeButton.addEventListener('click', () => {
     document.querySelector('#home-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
+document.querySelector('.about-button').addEventListener('click', () => {
+    document.querySelector('#about-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+})
 
