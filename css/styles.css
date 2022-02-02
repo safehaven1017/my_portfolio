@@ -73,7 +73,7 @@ nav {
 	outline: inherit;
     width: 20%;
     height: 8%; 
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: bold;
     display: flex;
     position: relative;
@@ -140,14 +140,14 @@ nav {
 
 #suffix {
     position: absolute;
-    font-size: 12vw;
-    left: 4vw;
-    top: .5vw;
+    font-size: 10vw;
+    left: 5.5vw;
+    top: 2vw;
 }
 
 .nav-button {
     width: 100%;
-    height: 9vh;
+    height: 10vh;
     background: none;
 	color: inherit;
 	border: none;
@@ -156,7 +156,7 @@ nav {
 	cursor: pointer;
 	outline: inherit;
     margin-left: 1vw;
-    font-size: 1.8vw;
+    font-size: 2.2vw;
     display: flex;
     align-items: center;
     border-radius: 15px;
@@ -335,7 +335,7 @@ strong {
 #skills-background {
     width: 80%;
     height: 100%;
-    background-image: url("../images/blur_background.jpeg");
+    background-image: url("../images/contact_bg.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -344,11 +344,12 @@ strong {
 }
 
 .light {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 #skills-title {
     margin-top: 7vw;
+    color: rgb(173, 26, 36);
 }
 
 .foreground {
@@ -388,6 +389,11 @@ strong {
 .skill-image {
     width: 100%;
     height: 100%;
+}
+
+.react {
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 
 #portfolio-container {
@@ -435,7 +441,7 @@ strong {
 }
 
 #contact-container {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -446,8 +452,8 @@ strong {
 
 #contact-background {
     width: 80%;
-    height: 70vh;
-    background-image: url("../images/contact_bg.jpeg");
+    height: 60vh;
+    background-image: url("../images/blur_background.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -456,7 +462,7 @@ strong {
 }
 
 #contact-container .foreground {
-    height: 70vh;
+    height: 60vh;
 }
 
 #reach-out-container {
