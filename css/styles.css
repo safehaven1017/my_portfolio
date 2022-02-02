@@ -304,13 +304,14 @@ nav {
     align-items: center;
     font-size: 1.3vw;
     margin-right: 2vw;
-    justify-content: space-evenly;
+    /* justify-content: center; */
 }
 
 #bio-info-container {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h4 {
@@ -488,3 +489,39 @@ strong {
     width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 770px) {
+    .project-wrapper {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 50%;
+        height: 25%;
+        box-sizing: border-box;
+    }
+    .project-wrapper p {
+        font-size: 2vw;
+    }
+
+    .skill-image-container {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #about-description p {
+        font-size: 2.3vw;
+    }
+    h4 {
+        font-size: 2.3vw;
+    }
+    strong {
+        font-size: 3vw;
+    }
+
+    .foreground {
+        justify-content: center;
+    }
+
+    .nav-button {
+        font-size: 2.5vw;
+    }
+  }
