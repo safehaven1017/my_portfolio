@@ -17,35 +17,95 @@
             </button>
             <nav>
                 <button class="nav-button about-button">ABOUT ME</button>   
-                <button class="nav-button">SKILLS</button>   
-                <button class="nav-button">PORTFOLIO</button>   
-                <button class="nav-button">CONTACT ME</button>   
+                <button class="nav-button skills-button">SKILLS</button>   
+                <button class="nav-button portfolio-button">PORTFOLIO</button>   
+                <button class="nav-button contact-button">CONTACT ME</button>   
             </nav>
         </div>
         <div id="content-container">
-            <div id="home-container">
+            <div class="section-container" id="home-container">
                 <div id="home-background"></div>
-                <div id="home-dim"></div>
-                <span id="home-r">R</span>
+                <div class="dim"></div>
+                <span id="home-r">R3</span>
+                <p id="home-intro">I'm Rick.<p>
             </div>
-            <div id="about-container">
-                <div class="about-left-container">
-                    <h2 id="about-title">ABOUT ME</h2>
-                    <div id="headshot-container">
-                        <img id="headshot" src="./images/headshot.jpeg" alt="my picture...">
-                        <div id="image-shadow"></div>
+            <div class="section-container" id="about-container">
+                <h2 class="title">ABOUT ME</h2>
+                <div id="about-content-container">
+                    <div class="about-left-container">
+                        <div id="headshot-container">
+                            <img id="headshot" src="./images/headshot.jpeg" alt="my picture...">
+                            <div id="image-shadow"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="about-right-container">
-                    <h2 id="about-intro">HELLO! I'M RICK.</h2>
-                    <div id="bio-info-container">
-                        <h4><strong>LOCATION: </strong>Snellville, GA</h4>
-                        <h4><strong>INTERESTS: </strong>Coding, Web Dev, Audio Engineering, Music, Golf</h4>
-                    </div>
-                    <div id="about-description">
-                        <p>I love coding... And that may be why you're here! Born and raised in and around Atlanta, I've been exposed to computers and technology my whole life. I first used computers to engineer, edit , mix, and produce music, but now I'm using my love for technology to create full-stack web applications. </p>
+                    <div class="about-right-container">
+                        
+                        <div id="bio-info-container">
+                            <h4><strong>LOCATION: </strong>Snellville, GA</h4>
+                            <h4><strong>INTERESTS: </strong>Coding, Web Dev, Audio Engineering, Music, Golf</h4>
+                        </div>
+                        <div id="about-description">
+                            <p>Born and raised in Atlanta, I've been exposed to computers and technology my whole life. I first used computers to engineer, edit , mix, and produce music, but now I'm using my passion for technology to take on the role of a full-stack developer. I love coding, I love problem-solving, and I love the satisfaction of developing beautiful, clean, and amazing web applications. My ability to take leadership with a given task, communicate with my peers, and vehemently tackle the projects I take on make me a great asset to any company or team of developers.</p>
+                        </div>
                     </div>
                 </div>    
+            </div>
+            <div class="section-container" id="skills-container">
+                <div id="skills-background"></div>
+                <div class="foreground">
+                    <h2 class="title" id="skills-title">SKILLS</h2>
+                    <div id="skills-content">
+                        <div class="skill-image-container three-stack">
+                            <img class="skill-image" src="./images/html_css_js_logos.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container wide">
+                            <img class="skill-image" src="./images/React_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container">
+                            <img class="skill-image" src="./images/postgres_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container three-stack">
+                            <img class="skill-image" src="./images/Java_Logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container three-stack">
+                            <img class="skill-image" src="./images/Python-Logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container wide">
+                            <img class="skill-image" src="./images/node_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container wide">
+                            <img class="skill-image" src="./images/ExpressJS_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container">
+                            <img class="skill-image" src="./images/sequelize_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container">
+                            <img class="skill-image" src="./images/bootstrap_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container">
+                            <img class="skill-image" src="./images/rest_logo.png" alt="CSS">
+                        </div>
+                        <div class="skill-image-container wide">
+                            <img class="skill-image" src="./images/jquery_logo.png" alt="CSS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-container" id="portfolio-container">
+                <div class="foreground">
+                    <h2 class="title" id="portfolio-title">PORTFOLIO</h2>
+                    <div id="links-container">
+                        <div class="project-wrapper">
+                            <a class="project-link" href="https://safehaven1017.github.io/mearch-project"><img class="project-image" src="./images/mearch_screenshot.png" alt="Mearch Link and Screenshot"></a>
+                        </div>
+                        <div class="project-wrapper">
+                            <a class="project-link" href="https://safehaven1017.github.io/mearch-project"><img class="project-image" src="./images/mearch_screenshot.png" alt="Mearch Link and Screenshot"></a>
+                        </div>
+                        <div class="project-wrapper">
+                            <a class="project-link" href="https://safehaven1017.github.io/avatar_tla/index.html"><img class="project-image" src="./images/avatar.png" alt="Mearch Link and Screenshot"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

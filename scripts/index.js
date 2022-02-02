@@ -36,4 +36,10 @@ homeButton.addEventListener('click', () => {
 document.querySelector('.about-button').addEventListener('click', () => {
     document.querySelector('#about-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
+document.querySelector('.skills-button').addEventListener('click', () => {
+    document.querySelector('#skills-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+})
+document.querySelector('.portfolio-button').addEventListener('click', () => {
+    document.querySelector('#portfolio-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+})
 
