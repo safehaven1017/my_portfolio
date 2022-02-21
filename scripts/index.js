@@ -45,4 +45,6 @@ document.querySelector('.portfolio-button').addEventListener('click', () => {
 document.querySelector('.contact-button').addEventListener('click', () => {
     document.querySelector('#contact-container').scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
-
+document.querySelector('.resume-button').addEventListener('click', () => {
+    window.open('https://drive.google.com/file/d/19-_JrY3plmfR982fAFpp-E4cUigrUVlF/view?usp=sharing');
+})
