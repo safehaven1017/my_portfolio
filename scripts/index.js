@@ -48,3 +48,14 @@ document.querySelector('.contact-button').addEventListener('click', () => {
 document.querySelector('.resume-button').addEventListener('click', () => {
     window.open('https://drive.google.com/file/d/19-_JrY3plmfR982fAFpp-E4cUigrUVlF/view?usp=sharing');
 })
+
+// document.querySelectorAll('.')
+
+document.querySelectorAll('.project-link').forEach(element => {
+    element.addEventListener('mouseover', () => {
+        element.style.opacity = .3;
+    })
+    element.addEventListener('mouseleave', () => {
+        element.style.opacity = 1;
+    })
+})

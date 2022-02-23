@@ -141,8 +141,8 @@ nav {
 #suffix {
     position: absolute;
     font-size: 10vw;
-    left: 5.5vw;
-    top: 2vw;
+    left: 25%;
+    top: 18%;
 }
 
 .nav-button {
@@ -386,6 +386,11 @@ strong {
     width: 16vw;
     height: 5vw;
 }
+.skill-image-container.wide.redux {
+    width: 16vw;
+    height: 5vw;
+    filter: invert(1);
+}
 
 .skill-image {
     width: 100%;
@@ -421,12 +426,34 @@ strong {
     width: 34%;
     height: 37%;
     box-sizing: border-box;
+    position: relative;
+}
+.project-description-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
 }
 
 .project-link {
+    width: 34%;
+    height: 37%;
     box-sizing: border-box;
+    position: relative;
     width: 100%;
     height: 100%;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.project-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .project-image {
@@ -525,3 +552,10 @@ strong {
         font-size: 2.5vw;
     }
   }
+
+a {
+   color: white; 
+}
+a:visited {
+   color: white; 
+}
