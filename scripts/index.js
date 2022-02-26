@@ -53,9 +53,11 @@ document.querySelector('.resume-button').addEventListener('click', () => {
 
 document.querySelectorAll('.project-link').forEach(element => {
     element.addEventListener('mouseover', () => {
-        element.style.opacity = .3;
+        element.children[1].style.opacity = .2;
+        element.children[0].style.opacity = 1;
     })
     element.addEventListener('mouseleave', () => {
-        element.style.opacity = 1;
+        element.children[1].style.opacity = 1;
+        element.children[0].style.opacity = 0;
     })
 })

@@ -414,7 +414,7 @@ strong {
 }
 
 #links-container {
-    margin: 2vw, 2vw, 2vw, 2vw;
+    margin: 1vw, 1vw, 1vw, 1vw;
     width: 100%;
     height: 100%;
     display: flex;
@@ -423,11 +423,15 @@ strong {
 }
 
 .project-wrapper {
-    width: 34%;
-    height: 37%;
+    width: 34vw;
+    height: 33vh;
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .project-description-wrapper {
     width: 100%;
     height: 100%;
@@ -447,13 +451,29 @@ strong {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    transition: .3s;
 }
 
 .project-description {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.project-description-text {
+    text-decoration: none;
+    margin: 1vw;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: .5vw;
 }
 
 .project-image {
@@ -461,12 +481,15 @@ strong {
     border-radius: 15px;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
-.project-wrapper p {
-    font-size: 1vw;
-    margin: 0;
-    padding: 0;
+.project-image:hover {
+    box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
+}
+
+.github-link {
+    font-size: 1.5vw;
 }
 
 #contact-container {
@@ -510,6 +533,12 @@ strong {
     padding: 2vw;
     background-color: white;
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.493);
+    transition: width .3s, height .5s, box-shadow 1s;
+}
+.contact-links:hover {
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.493);
 }
 
 .contact-links img {
@@ -517,16 +546,28 @@ strong {
     height: 100%;
 }
 
-@media only screen and (max-width: 770px) {
+
+@media only screen and (max-width: 1350px) {
     .project-wrapper {
         margin-left: 20%;
         margin-right: 20%;
-        width: 50%;
-        height: 25%;
+        width: 25vw;
+        height: 16vh;
         box-sizing: border-box;
     }
-    .project-wrapper p {
-        font-size: 2vw;
+
+    .project-description-text {
+        font-size: .6rem;
+    }
+}
+    
+@media only screen and (max-width: 880px) {
+    .project-wrapper {
+        width: 40%;
+        height: 19vh;
+    }
+    .project-description-text {
+        font-size: .3rem;
     }
 
     .skill-image-container {
@@ -551,7 +592,25 @@ strong {
     .nav-button {
         font-size: 2.5vw;
     }
-  }
+
+    .project-description-text {
+        font-size: .7rem;
+    }
+
+    .github-link {
+        font-size: 1.9vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .project-description-text {
+        font-size: .5rem;
+    }
+
+    .github-link {
+        font-size: 3vw;
+    }
+}
 
 a {
    color: white; 
